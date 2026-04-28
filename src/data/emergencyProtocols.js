@@ -1,0 +1,81 @@
+// FILE: src/data/emergencyProtocols.js
+export const protocols = {
+  cardiac: {
+    name: 'Cardiac Arrest',
+    color: '#e63946',
+    broadcastLabel: 'CARDIAC EMERGENCY — NEED CPR',
+    escalationSummary: 'CPR guidance escalated. Immediate bystander support required.',
+    reassurance: [
+      'Stay with me. You are acting fast and that matters.',
+      'You are doing great. Keep going step by step. Help is being coordinated.',
+      'I am with you. Focus on the next action only.',
+    ],
+    systemMessages: [
+      'Pinning emergency mode to screen...',
+      'Alerting nearby help...',
+      'Response initiated...',
+      'Preparing CPR pacing guidance...',
+      'Monitoring user responsiveness...',
+    ],
+    steps: [
+      { id: 1, title: 'Check Responsiveness', instruction: "Tap their shoulders firmly and say, 'Can you hear me? Stay with me.'" },
+      { id: 2, title: 'Call for Help', instruction: 'Point to someone nearby and say clearly: call emergency services now and come back to me.' },
+      { id: 3, title: 'Position', instruction: 'Lay them flat on a firm surface and kneel beside the chest. Keep your shoulders over your hands.' },
+      { id: 4, title: 'Hand Position', instruction: 'Place the heel of one hand in the center of the chest, place the other on top, and lock your elbows.' },
+      { id: 5, title: 'Start Compressions', instruction: 'Push hard and fast in the center of the chest. Aim for a strong steady rhythm, about 100 to 120 compressions per minute.' },
+      { id: 6, title: 'Continue', instruction: 'Do not stop. Keep the rhythm going. Every compression buys time until help arrives.' },
+    ],
+  },
+  choking: {
+    name: 'Choking',
+    color: '#f4a261',
+    broadcastLabel: 'CHOKING EMERGENCY — AIRWAY HELP NEEDED',
+    escalationSummary: 'Airway obstruction protocol escalated. Immediate intervention needed.',
+    reassurance: [
+      'Stay calm. Fast action helps here.',
+      'You are not alone. Keep following the sequence.',
+      'You are doing great. Stay focused on clearing the airway.',
+    ],
+    systemMessages: [
+      'Locking choking response protocol...',
+      'Alerting nearby help...',
+      'Response initiated...',
+      'Preparing airway intervention guidance...',
+      'Monitoring user responsiveness...',
+    ],
+    steps: [
+      { id: 1, title: 'Confirm Choking', instruction: "Ask: 'Are you choking?' If they cannot speak, cough, or breathe — act immediately." },
+      { id: 2, title: 'Lean Forward', instruction: 'Tell them to lean forward with their head lower than their chest.' },
+      { id: 3, title: 'Back Blows', instruction: 'Give 5 firm blows between the shoulder blades with the heel of your hand.' },
+      { id: 4, title: 'Abdominal Thrusts', instruction: 'Stand behind them. Make a fist. Place it just above their belly button. Grasp with other hand. Pull sharply inward and upward 5 times.' },
+      { id: 5, title: 'Repeat', instruction: 'Alternate between 5 back blows and 5 abdominal thrusts until the object is cleared or they lose consciousness.' },
+      { id: 6, title: 'If Unconscious', instruction: 'Lower them to the ground carefully. Begin CPR immediately. Call for emergency help.' },
+    ],
+  },
+  injury: {
+    name: 'Injury / Bleeding',
+    color: '#e9c46a',
+    broadcastLabel: 'SEVERE BLEEDING — URGENT ASSISTANCE NEEDED',
+    escalationSummary: 'Bleeding control protocol escalated. Immediate local response required.',
+    reassurance: [
+      'Steady pressure helps. You are making a real difference.',
+      'Keep them calm. Keep yourself focused. You are doing well.',
+      'Stay with me. Maintain pressure and stay with the patient.',
+    ],
+    systemMessages: [
+      'Securing trauma response mode...',
+      'Alerting nearby help...',
+      'Response initiated...',
+      'Preparing bleeding control guidance...',
+      'Monitoring user responsiveness...',
+    ],
+    steps: [
+      { id: 1, title: 'Ensure Safety', instruction: 'Make sure the area is safe for you to approach. Do not put yourself in danger.' },
+      { id: 2, title: 'Apply Pressure', instruction: 'Use a clean cloth, shirt, or bandage. Press it firmly directly onto the wound. Do not lift it to check.' },
+      { id: 3, title: 'Keep Pressure', instruction: 'Maintain firm continuous pressure. If the cloth soaks through, add more on top — do not remove.' },
+      { id: 4, title: 'Elevate', instruction: 'If the injury is on a limb and no bones are broken, raise it above the level of the heart.' },
+      { id: 5, title: 'Keep Them Still', instruction: 'Tell them not to move. Keep them calm and talking. Monitor their breathing.' },
+      { id: 6, title: 'Wait for Help', instruction: 'Do not remove the pressure. Reassure them constantly. Help is on the way.' },
+    ],
+  },
+};
